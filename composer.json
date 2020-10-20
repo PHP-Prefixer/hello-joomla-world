@@ -1,0 +1,24 @@
+{
+    "name": "php-prefixer/hello-prefixed-world-for-joomla",
+    "description": "Hello Prefixed World module for Joomla. A module to showcase the PHP-Prefixer service. Install any library freely. PHP-Prefixer will manage your namespaces.",
+    "require": {
+        "illuminate/support": "^8.10"
+    },
+    "extra": {
+        "php-prefixer": {
+            "projectName": "Hello Prefixed World for Joomla",
+            "prefixForNamespaces": "PPP",
+            "prefixForGlobalObjects": "PPP_",
+            "excludePaths": [
+                "bin/",
+                "doctrine/inflector/docs",
+                "voku/portable-ascii/build"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "ModHelloWorld\\": "src/"
+        }
+    }
+}
